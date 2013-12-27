@@ -88,3 +88,11 @@ QUnit.test("connection.withCredentials manual override to false for cross-domain
 
     QUnit.ok(!con.withCredentials, "connection.withCredentials overridden to false for cross-domain connection.");
 });
+
+QUnit.test("pingIntervalId does not change on multiple calls to configurePingInterval", function () {
+    var con = $.connection();
+
+    con._.pingIntervalId = 1;
+
+    
+});
